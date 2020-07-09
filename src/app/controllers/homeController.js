@@ -1,5 +1,5 @@
 module.exports = {
-  index(req, res) {
+  getDollarPrice(req, res) {
     const request = require("request");
     const cheerio = require("cheerio");
 
@@ -9,12 +9,10 @@ module.exports = {
       if (!error && response.statusCode == 200) {
         const $ = cheerio.load(html);
 
-        let dolarPrice = $(".style__Text-sc-27fg4f-2").text();
-        dolarPrice = dolarPrice.slice(0, 4);
+        let dollarPrice = $(".style__Text-sc-27fg4f-2").text();
+        dollarPrice = dollarPrice.slice(0, 4);
 
-        console.log(dolarPrice);
-
-        return res.render("index", { dolarPrice });
+        return res.render("index", { dollarPrice });
       }
     });
   },

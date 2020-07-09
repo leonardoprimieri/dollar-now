@@ -1,5 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap");
 body {
   margin: 0;
   padding: 0;
-  background-color: red;
+  background-color: #212121;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.container .container-image {
+  background-image: linear-gradient(
+    to bottom,
+    #525ad4,
+    #525bd4c0,
+    #525bd486,
+    #525bd446
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+  border-radius: 200px 0 0 0;
+}
+
+.container .container-image h1 {
+  color: #4caf50;
+  letter-spacing: 2px;
+}
+
+.container .container-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1.6;
+  flex-direction: column;
+  border-radius: 0 0 200px 0;
+  background-image: linear-gradient(
+    to bottom,
+    #d3d3d3,
+    #d3d3d3b9,
+    #d3d3d37a,
+    #d3d3d365
+  );
+}
+
+.dollar-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #2b264e;
+  display: flex;
+  justify-content: center;
+}
+
+.dollar-image img {
+  width: 50%;
+}
+
+span {
+  color: #525ad4;
+  font-size: 48px;
+}
+
+.container-content h1 {
+  color: wheat;
+  letter-spacing: 2px;
 }
